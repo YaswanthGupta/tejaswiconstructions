@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    min-height: 100% !important;
+    height: 100%;
+}
+
+footer {
+    background-color: black !important;
+    text-align: center;
+}
+
+footer>.row,
+footer a {
+    color: white !important;
+}
+
+#logo-section {
+    padding-left: 10px;
+}
+
+#logo-section a:hover {
+    text-decoration: none;
+}
+
+#logo-title {
+    color: white;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+#contact-us-line {
+    text-align: center;
+    font-family: 'Nanum Myeongjo';
+}
+
+#disclaimer {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 6px;
+}
+
+#section1,
+#section2,
+#section3,
+#section4,
+#section5 {
+    min-height: 100%;
+}
+
+#section1>*,
+#section2>*,
+#section3>*,
+#section4>*,
+#section5>* {
+    width: 99%;
+    padding: 0 10px;
+}
+
+#section1 {
+    padding-top: 80px;
+    color: #fff;
+    background-color: #1E88E5;
+    overflow: hidden;
+}
+
+#section2 {
+    padding-top: 80px;
+    color: #fff;
+    background-color: #673ab7;
+    overflow: hidden;
+}
+
+#section3 {
+    padding-top: 80px;
+    color: #fff;
+    background-color: #ff9800;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#section4 {
+    padding-top: 80px;
+    color: #fff;
+    background-color: #673ab7;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Nanum Myeongjo';
+}
+
+#section5 {
+    padding-top: 80px;
+    color: #fff;
+    /*background-color: #1E88E5;*/
+    /*background-color: #41f443;*/
+    background-color: #0066cc;
+    overflow: hidden;
+}
+
+#section1>h1,
+#section2>h1,
+#section3>h1,
+#section4>h1,
+#section5>h1 {
+    text-align: center;
+    font-family: 'Raleway';
+}
+
+.fa-rotate-n45 {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#section4 li {
+    font-family: 'Raleway';
+}
+
+.no-openings {
+    position: absolute;
+    background: black;
+    opacity: 0;
+}
+
+.col-sm-4:hover .no-openings {
+    font-size: 20px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    margin-top: -20px;
+    opacity: 0.9;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 790px) {
+    #horatio {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 791px) {
+    .screen {
+        display: none;
+    }
+}
+
+
+/* TEAM START */
+
+.caption-style-2 {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.caption-style-2 li {
+    float: left;
+    padding: 25px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.caption-style-2 li:hover .caption {
+    opacity: 1;
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+}
+
+.caption-style-2 img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
+}
+
+.caption-style-2 .caption {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 300px;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.caption-style-2 .blur {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 300px;
+    width: 400px;
+    z-index: 5;
+    position: absolute;
+}
+
+.caption-style-2 .caption-text h1 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: orange;
+}
+
+.caption-style-2 .caption-text {
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    top: 20px;
+}
+
+.caption-text>p {
+    font-family: 'Abel';
+}
+
+.property-img-div img {
+    width: 100%;
+}
+
+@media screen and (max-width:400px) {
+
+    .desktop-mot {
+        display: none;
+    }
+}
+
+@media screen and (min-width:401px) {
+
+    .mobile-mot {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 791px) {
+    .mobile-navigation,
+    .mobile-caption {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .caption {
+        display: none;
+    }
+    .banner-slider .s-next,
+    .banner-slider .s-prev,
+    .buttons .next-btn,
+    .buttons .play-btn,
+    .buttons .previous-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .mobile-caption .blur {
+        width: 93% !important;
+    }
+    .mobile-caption .caption-text {
+        margin-left: -70px !important;
+    }
+}
+
+.mobile-navigation {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    font-family: 'Raleway';
+    color: white;
+    font-weight: 400;
+    text-shadow: 2px 2px black;
+}
+
+.mobile-caption {
+    margin-top: 50%;
+}
+
+.mobile-caption .blur {
+    width: 95%;
+}
+
+.mobile-caption .caption-text {
+    margin-top: 50%;
+    margin-left: 0;
+}
+
+
+/* TEAM END */
